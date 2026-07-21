@@ -29,14 +29,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from judyp device
 $(call inherit-product, device/lge/judyp/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common BlissRom stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
-PRODUCT_NAME := lineage_judyp
+PRODUCT_NAME := bliss_judyp
 PRODUCT_DEVICE := judyp
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
